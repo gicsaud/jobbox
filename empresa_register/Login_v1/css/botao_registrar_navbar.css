@@ -1,0 +1,51 @@
+
+.btn-lg {
+padding: 10px 35px;
+}
+.botao-entrar {
+margin-top: 10px;
+}
+.button {
+position: relative;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+ background: #000000;
+padding: 1em 2em;
+border: none;
+ color: #ffffff;
+ font-size: 13px;
+ cursor: pointer;
+ outline: none;
+ overflow: hidden;
+ border-radius: 100px;
+}
+.button span {
+ position: relative;
+ pointer-events: none;
+}
+.button::before {
+ --size: 0;
+ content: '';
+ position: absolute;
+ left: var(--x);
+ top: var(--y);
+ width: var(--size);
+ height: var(--size);
+ background: radial-gradient(circle closest-side, #9d3fd1, transparent);
+ -webkit-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ transition: width .2s ease, height .2s ease;
+}
+.button:hover::before {
+ --size: 400px;
+}
+
+
+ .navlink {
+color: #8a4fbf;
+ margin: auto 70px auto 70px ;
+ text-decoration: none;
+ font-family: "poppins-medium";
+ 
+ }
